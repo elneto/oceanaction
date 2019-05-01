@@ -377,15 +377,15 @@
 	#primary-menu-trigger {
 		opacity: 1;
 		pointer-events: auto;
-		top: 25px;
+		top: 0 !important;
 		margin-top: 0;
-		left: 0;
+		right: 0;
 		z-index: 1;
 	}
 
 	#primary-menu .container #primary-menu-trigger {
 		top: 5px;
-		left: 0;
+		right: 0;
 	}
 
 	#primary-menu > ul,
@@ -1882,8 +1882,6 @@
 		padding-left: 40px !important;
 		padding-right: 40px !important;
 	}
-
-	#primary-menu-trigger { left: 20px; }
 
 	#primary-menu-trigger { left: 20px; }
 
