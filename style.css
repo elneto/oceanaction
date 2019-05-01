@@ -12341,7 +12341,7 @@ body:not(.no-transition) #wrapper,
     #top-bar li {
       border: none;
       /*&:hover {
-      		background-color: transparent;	
+      		background-color: transparent;
       	}*/ }
       #top-bar li > a {
         font-size: 12px;
@@ -12588,6 +12588,10 @@ a {
 
 .eight-areas {
   margin-bottom: 80px !important; }
+  .eight-areas .feature-box {
+    min-height: -webkit-min-content !important;
+    min-height: -moz-min-content !important;
+    min-height: min-content !important; }
 
 .feature-box {
   min-height: 25% !important; }
@@ -12602,20 +12606,20 @@ a {
     color: #666;
     letter-spacing: 0.03em;
     padding-top: 7px;
-    /*&.member-state {
-    	padding-bottom: 1px;
-    	border-bottom: $member-state solid 1px;
-    }
+    		/*&.member-state {
+    			padding-bottom: 1px;
+    			border-bottom: $member-state solid 1px;
+    		}
     
-    &.secretary-general {
-    	padding-bottom: 1px;
-    	border-bottom: $secretary-general solid 1px;
-    }
+    		&.secretary-general {
+    			padding-bottom: 1px;
+    			border-bottom: $secretary-general solid 1px;
+    		}
     
-    &.shared-commitment {
-    	padding-bottom: 1px;
-    	border-bottom: $shared-commitment solid 1px;
-    }*/ }
+    		&.shared-commitment {
+    			padding-bottom: 1px;
+    			border-bottom: $shared-commitment solid 1px;
+    		}*/ }
 
 #commitments-overview .feature-box p {
   margin-top: 0; }

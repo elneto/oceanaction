@@ -162,7 +162,7 @@
 			border: none;
 
 			/*&:hover {
-					background-color: transparent;	
+					background-color: transparent;
 				}*/
 
 			>a {
@@ -566,6 +566,10 @@ a {
 
 .eight-areas {
 	margin-bottom: 80px !important;
+
+	.feature-box {
+    min-height: min-content !important;
+	}
 }
 
 // Feature Box
@@ -590,12 +594,12 @@ a {
 			padding-bottom: 1px;
 			border-bottom: $member-state solid 1px;
 		}
-		
+
 		&.secretary-general {
 			padding-bottom: 1px;
 			border-bottom: $secretary-general solid 1px;
 		}
-		
+
 		&.shared-commitment {
 			padding-bottom: 1px;
 			border-bottom: $shared-commitment solid 1px;
@@ -655,7 +659,7 @@ i.i-plain.shared-commitment {
 // Commitments Overview section
 
 
-// Icon styles 
+// Icon styles
 
 .feature-box .fbox-icon i,
 .feature-box .fbox-icon img {
