@@ -1,28 +1,19 @@
 /*-----------------------------------------------------------------------------------
-
     Theme Name: Canvas
     Theme URI: http://themes.semicolonweb.com/html/canvas
     Description: The Multi-Purpose Template
     Author: SemiColonWeb
     Author URI: http://themeforest.net/user/semicolonweb
     Version: 5.2.1
-
     LESS Stylesheet
-
 -----------------------------------------------------------------------------------*/
-
-
 // Initialize
 @import "sass/variables.scss";
 @import "sass/mixins.scss";
-
-
 // Core CSS
 @import "sass/typography.scss";
 @import "sass/helpers.scss";
 @import "sass/layouts.scss";
-
-
 // Content Blocks
 @import "sass/topbar.scss";
 @import "sass/header.scss";
@@ -33,20 +24,12 @@
 @import "sass/blog.scss";
 @import "sass/shop.scss";
 @import "sass/events.scss";
-
-
 // Shortcodes
 @import "sass/shortcodes.scss";
-
-
 // Footer
 @import "sass/footer.scss";
-
-
 // Widgets
 @import "sass/widgets.scss";
-
-
 // Extras
 @import "sass/extras.scss";
 
@@ -61,7 +44,6 @@
 	font-size: 14px;
 	border-radius: 14px;
 }*/
-
 // Brand Bar
 @media (min-width: 992px) {
 	#top-bar {
@@ -111,8 +93,6 @@
 				}
 
 				//.language-switcher & { }
-
-
 				&.current {
 					font-weight: 700;
 				}
@@ -126,9 +106,7 @@
 					margin-right: ($font-size-base * 0.3); // ~4px
 				}
 			}
-
 		}
-
 	}
 
 	#header {
@@ -164,7 +142,6 @@
 			/*&:hover {
 					background-color: transparent;
 				}*/
-
 			>a {
 				font-size: 12px;
 				line-height: inherit;
@@ -184,9 +161,7 @@
 					margin-right: ($font-size-base * 0.3); // ~4px
 				}
 			}
-
 		}
-
 	}
 
 	#header {
@@ -214,7 +189,6 @@
 			line-height: 120%;
 			display: inline-block;
 		}
-
 	}
 
 	#header-wrap {
@@ -252,13 +226,12 @@
 
 	.intro-logo {
 		margin-left: 0;
-		//text-align: center;
 
+		//text-align: center;
 		img {
 			//width: 80%;
 			max-width: 95% !important;
 		}
-
 	}
 
 	#commitments-overview {
@@ -267,12 +240,10 @@
 				max-width: 50% !important;
 				margin-top: 9% !important;
 			}
-
 		}
 	}
 
 	.commitments-full {
-
 		.col-padding {
 			padding-left: 60px !important;
 			padding-right: 60px !important;
@@ -282,13 +253,11 @@
 			//background-size: auto !important;
 			height: 400px !important;
 		}
-
 	}
 
 	#footer {
 		margin-top: 30px !important;
 	}
-
 }
 
 #page-menu.sticky-page-menu #page-menu-wrap,
@@ -312,7 +281,6 @@
 #commitments-full .heading-block:after {
 	width: 20%;
 }
-
 
 .dark .heading-block:after {
 	border-top: rgba($theme-color, 1) solid 3px !important;
@@ -385,7 +353,6 @@ body:not(.top-search-open) #header-wrap #logo {
 	padding-bottom: 0;
 }
 
-
 #site-title {
 	//color: $heading-color;
 	font-weight: 600;
@@ -405,17 +372,14 @@ body:not(.top-search-open) #header-wrap #logo {
 		margin: 30px auto 0;
 	}
 }*/
-
 /* ----------------------------------------------------------------
 	Typography
 -----------------------------------------------------------------*/
-
 a {
 	color: $body-color;
 
 	p & {
 		//text-decoration: underline !important;
-
 		border-bottom: dotted 1px $body-color;
 		padding-bottom: 1px;
 		//background-color: $grey-5-percent;
@@ -470,25 +434,20 @@ a {
 	@media (min-width: 992px) {
 		padding: 0 40px;
 	}
-
-
 }
 
 // Intro section
-
 .intro-logo {
 	margin-left: 10%;
 	padding-top: 10px;
 }
 
-
 @media (min-width: 992px) {
-	// hide mobile home from desktop
 
+	// hide mobile home from desktop
 	.mobile-home {
 		display: none !important;
 	}
-
 }
 
 @media (max-width: 991px) {
@@ -563,12 +522,11 @@ a {
 }
 
 // Eight Areas
-
 .eight-areas {
 	margin-bottom: 80px !important;
 
 	.feature-box {
-    min-height: min-content !important;
+		min-height: min-content !important;
 	}
 }
 
@@ -589,17 +547,14 @@ a {
 		color: #666;
 		letter-spacing: $letterspacing-less-wide;
 		padding-top: 7px;
-
 		/*&.member-state {
 			padding-bottom: 1px;
 			border-bottom: $member-state solid 1px;
 		}
-
 		&.secretary-general {
 			padding-bottom: 1px;
 			border-bottom: $secretary-general solid 1px;
 		}
-
 		&.shared-commitment {
 			padding-bottom: 1px;
 			border-bottom: $shared-commitment solid 1px;
@@ -609,8 +564,8 @@ a {
 
 #commitments-overview {
 	.feature-box {
-		//width: 120%;
 
+		//width: 120%;
 		p {
 			margin-top: 0;
 		}
@@ -636,7 +591,6 @@ i.i-plain.shared-commitment {
 }
 
 // Data blocks
-
 .data-blocks .dark {
 	.counter {
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
@@ -652,15 +606,11 @@ i.i-plain.shared-commitment {
 	}
 }
 
-
 .dark .heading-block:not(.not-dark),
 .dark .counter {}
 
 // Commitments Overview section
-
-
 // Icon styles
-
 .feature-box .fbox-icon i,
 .feature-box .fbox-icon img {
 	background-color: white;
@@ -729,14 +679,12 @@ i.i-plain.shared-commitment {
 }
 
 // Quote style
-
 /*.testimonial-full .testi-image a { // hack to remove bug causing image to display 2x
 		display: none;
 	&:nth-child(2) {
 		display: block;
 	}
 	}*/
-
 .testimonial-full .testi-meta a,
 .testimonial-full .testi-meta span {
 	color: white;
@@ -757,7 +705,6 @@ i.i-plain.shared-commitment {
 /* ----------------------------------------------------------------
 	Footer
 -----------------------------------------------------------------*/
-
 #footer {
 	background-color: #fff;
 	//margin-top: 45px;
@@ -776,11 +723,10 @@ i.i-plain.shared-commitment {
 	padding: 0;
 	padding-top: 0;
 	background-color: #fff;
+
 	//font-size: $font-size-base;
 	//line-height: $line-height-content;
-
 	.footer-brand {
-
 		a {
 			font-size: 21px;
 			line-height: 21px;

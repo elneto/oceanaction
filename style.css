@@ -6548,17 +6548,14 @@ body:not(.device-touch) .button.button-full strong {
   text-align: right; }
 
 /*-----------------------------------------------------------------------------------
-
 	Shortcodes: feature-box.scss
-
 -----------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------
 	Featured Boxes
 -----------------------------------------------------------------*/
 .feature-box {
   position: relative;
-  margin-top: 20px;
-  padding: 0 0 0 80px; }
+  margin-top: 20px; }
   .feature-box:first-child {
     margin-top: 0; }
   .feature-box .fbox-icon {
@@ -6806,8 +6803,7 @@ body:not(.device-touch) .button.button-full strong {
     line-height: 64px; }
 .feature-box.fbox-center.fbox-small.fbox-outline .fbox-icon i {
   line-height: 58px; }
-.feature-box.fbox-center .fbox-light
-.fbox-outline.fbox-small .fbox-icon i {
+.feature-box.fbox-center .fbox-light .fbox-outline.fbox-small .fbox-icon i {
   line-height: 54px; }
 .feature-box.fbox-center.fbox-small.fbox-border .fbox-icon i {
   line-height: 62px !important; }
@@ -6824,7 +6820,6 @@ body:not(.device-touch) .button.button-full strong {
 /* Feature Box - Right
 -----------------------------------------------------------------*/
 .feature-box.fbox-right {
-  padding: 0 80px 0 0;
   text-align: right; }
   .feature-box.fbox-right.fbox-large {
     padding-right: 115px; }
