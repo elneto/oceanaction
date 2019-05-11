@@ -14045,7 +14045,11 @@ body:not(.no-transition) #wrapper,
 
   #header {
     background-color: #fff !important;
-    margin-top: 58px !important; }
+    margin-top: 58px !important;
+    height: 45px; }
+
+  #primary-menu ul li > a {
+    padding: 10px 15px; }
 
   #logo {
     font-size: 0.9rem !important;
