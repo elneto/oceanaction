@@ -260,9 +260,7 @@
 		}
 	}
 
-	#footer {
-		margin-top: 30px !important;
-	}
+
 }
 
 #page-menu.sticky-page-menu #page-menu-wrap,
@@ -712,15 +710,11 @@ i.i-plain.shared-commitment {
 -----------------------------------------------------------------*/
 #footer {
 	background-color: #fff;
-	//margin-top: 45px;
+	margin-top: 0 !important;
 	//border-top: $grey-5-percent solid 1px;
 	border-top: none;
-	padding-top: 35px;
+	height: 6em;
 
-	.footer-widgets-wrap {
-		//position: relative;
-		//padding: 80px 0;
-	}
 }
 
 #copyrights {

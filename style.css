@@ -12411,10 +12411,7 @@ body:not(.no-transition) #wrapper,
     padding-left: 60px !important;
     padding-right: 60px !important; }
   .commitments-full .bg-image {
-    height: 400px !important; }
-
-  #footer {
-    margin-top: 30px !important; } }
+    height: 400px !important; } }
 #page-menu.sticky-page-menu #page-menu-wrap,
 #page-menu-wrap {
   background-color: transparent;
@@ -12704,8 +12701,9 @@ i.i-plain.shared-commitment {
 -----------------------------------------------------------------*/
 #footer {
   background-color: #fff;
+  margin-top: 0 !important;
   border-top: none;
-  padding-top: 35px; }
+  height: 6em; }
 
 #copyrights {
   height: 21px;
