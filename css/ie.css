@@ -1,0 +1,17 @@
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+
+    /* IE10+ specific styles go here */
+    .eight-areas .feature-box {
+        min-height: unset !important;
+        height: min-content !important;
+    }
+
+    .feature-box {
+        min-height: 16% !important;
+    }
+
+    #logo {
+        font-size: 30px;
+    }
+}
