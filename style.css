@@ -12678,6 +12678,9 @@ i.i-plain.shared-commitment {
   font-weight: 500;
   text-tranform: uppercase; }
 
+.fluid-width-video-wrapper {
+  margin-top: -8em; }
+
 /*.testimonial-full .testi-image a { // hack to remove bug causing image to display 2x
 		display: none;
 	&:nth-child(2) {
