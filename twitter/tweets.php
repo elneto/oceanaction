@@ -19,9 +19,9 @@ if( isset( $_GET['username'] ) AND $_GET['username'] != '' ):
 
 	$interval = 600;
 
-	//$cache_file = dirname(__FILE__) . '/cache/' . $username . '_' . $limit;
-	$docroot = $_SERVER['DOCUMENT_ROOT'];
-	$cache_file = $docroot . '/content/cached/' . $username . '_' . $limit;
+	$cache_file = dirname(__FILE__) . '/cache/' . $username . '_' . $limit;
+	// $docroot = $_SERVER['DOCUMENT_ROOT'];
+	// $cache_file = $docroot . '/content/cached/' . $username . '_' . $limit;
 
 	if (file_exists($cache_file)) {
 		$last = filemtime($cache_file);
