@@ -71,6 +71,10 @@
 	#page-menu-wrap {
 		background-color: #009edb;
 	}
+
+	.nav-tabs .nav-link {
+		border: none;
+	}
 </style>
 
 <body class="stretched">
@@ -136,13 +140,13 @@
 
 					<!-- <a href="https://oceanconference.un.org/commitments/register/" id="report-button" class="button button-dark fright">Register a commitment</a> -->
 					<nav id="primary-menu">
-						<ul class="sf-js-enabled" style="touch-action: pan-y;">
-							<li class="current sub-menu"><a href="/" class="sf-with-ul">
+						<ul style="touch-action: pan-y; display: inline;" class="sf-js-enabled nav nav-tabs navbar-nav" role="tablist navigation" id="myTab">
+							<li class="current sub-menu nav-item"><a href="#home" class="sf-with-ul nav-link" id="home-tab" data-toggle="tab" role="tab" aria-controls="home" aria-selected="false">
 									<div>Home</div>
 								</a>
 
 							</li>
-							<li class="sub-menu"><a href="#" class="sf-with-ul">
+							<li class="sub-menu nav-item"><a href="#about" class="sf-with-ul nav-link" id="about-tab" data-toggle="tab" role="tab" aria-controls="about" aria-selected="false">
 									<div>About</div>
 								</a>
 							</li>
@@ -176,204 +180,235 @@
 			</div>
 
 		</header><!-- #header end -->
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" aria-selected="true">
+				<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix video-home" data-speed="1500" data-loop="true" data-arrows="true" data-autoplay="7000">
+					<!-- Background video home content -->
+					<div class="slider-parallax-inner">
 
-		<section id="slider" class="slider-element slider-parallax swiper_wrapper full-screen clearfix video-home" data-speed="1500" data-loop="true" data-arrows="true" data-autoplay="7000">
-			<!-- Background video home content -->
-			<div class="slider-parallax-inner">
+						<div class="swiper-container swiper-parent">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide dark">
+									<!-- slide 1 -->
+									<div class="container clearfix">
+										<div class="slider-caption slider-caption-center">
+											<h2 data-caption-animate="fadeInUp">2020 Ocean Conference</h2>
+											<h3 data-caption-animate="fadeInUp" style="font-size: 2em;">Lisbon, 2-6 June 2020</h3>
 
-				<div class="swiper-container swiper-parent">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide dark">
-							<!-- slide 1 -->
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp">2020 Ocean Conference</h2>
-									<h3 data-caption-animate="fadeInUp" style="font-size: 2em;">Lisbon, 2-6 June 2020</h3>
+											<a href="#" data-scrollto="#content" data-offset="100" id="report-button-video" class="button button-border button-dark button-large" data-caption-animate="fadeInUp" data-caption-delay="200">Learn More</a>
+										</div>
+									</div>
+									<div class="video-wrap">
+										<video id="slide-video" poster="images/belem-tower-2809818_1920_antonioFranciscoCaladoPixabay.jpg" preload="auto" loop autoplay muted>
+											<div class="accessible-image"><img src="images/belem-tower-2809818_1920_antonioFranciscoCaladoPixabay.jpg" class="sr-only" alt="Fish in a reef" />
+											</div>
+											<!--<source src='images/videos/new-technology_logo-blue.webm' type='video/webm' />
+									<source src='images/videos/new-technology_logo-blue.mp4' type='video/mp4' />-->
+										</video>
+										<div class="video-overlay" style="background-color: rgba(0,0,0,0.4);"></div>
+									</div>
+								</div>
+								<div class="swiper-slide dark">
+									<!-- slide 1 -->
+									<div class="container clearfix">
+										<div class="slider-caption slider-caption-center">
+											<h2 data-caption-animate="fadeInUp">2020 Ocean Conference</h2>
+											<h3 data-caption-animate="fadeInUp" style="font-size: 2em;">Lisbon, 2-6 June 2020</h3>
 
-									<a href="#" data-scrollto="#content" data-offset="100" id="report-button-video" class="button button-border button-dark button-large" data-caption-animate="fadeInUp" data-caption-delay="200">Learn More</a>
+											<a href="#" data-scrollto="#content" data-offset="100" id="report-button-video" class="button button-border button-dark button-large" data-caption-animate="fadeInUp" data-caption-delay="200">Learn More</a>
+										</div>
+									</div>
+									<div class="video-wrap">
+										<video id="slide-video" poster="images/fish2020.jpg" preload="auto" loop autoplay muted>
+											<div class="accessible-image"><img src="images/fish2020.jpg" class="sr-only" alt="Fish in a reef" />
+											</div>
+											<!--<source src='images/videos/new-technology_logo-blue.webm' type='video/webm' />
+									<source src='images/videos/new-technology_logo-blue.mp4' type='video/mp4' />-->
+										</video>
+										<div class="video-overlay" style="background-color: rgba(0,0,0,0.4);"></div>
+									</div>
 								</div>
 							</div>
-							<div class="video-wrap">
-								<video id="slide-video" poster="images/belem-tower-2809818_1920_antonioFranciscoCaladoPixabay.jpg" preload="auto" loop autoplay muted>
-									<div class="accessible-image"><img src="images/belem-tower-2809818_1920_antonioFranciscoCaladoPixabay.jpg" class="sr-only" alt="Fish in a reef" />
-									</div>
-									<!--<source src='images/videos/new-technology_logo-blue.webm' type='video/webm' />
-									<source src='images/videos/new-technology_logo-blue.mp4' type='video/mp4' />-->
-								</video>
-								<div class="video-overlay" style="background-color: rgba(0,0,0,0.4);"></div>
-							</div>
+							<div class="slider-arrow-left" tabindex="0" role="button" aria-label="Previous slide" style="opacity: 1.19744;"><i class="icon-angle-left"></i></div>
+							<div class="slider-arrow-right" tabindex="0" role="button" aria-label="Next slide" style="opacity: 1.19744;"><i class="icon-angle-right"></i></div>
 						</div>
-						<div class="swiper-slide dark">
-							<!-- slide 1 -->
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp">2020 Ocean Conference</h2>
-									<h3 data-caption-animate="fadeInUp" style="font-size: 2em;">Lisbon, 2-6 June 2020</h3>
 
-									<a href="#" data-scrollto="#content" data-offset="100" id="report-button-video" class="button button-border button-dark button-large" data-caption-animate="fadeInUp" data-caption-delay="200">Learn More</a>
+						<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+
+					</div>
+				</section><!-- /Background video home content -->
+
+				<div class="section parallax dark nobottommargin notopmargin full-screen clearfix mobile-home" style="background-image: url('images/fish2020.jpg'); center center; background-size:cover; padding: 100px 0; z-index: 0;"
+				  data-stellar-background-ratio="0.3">
+					<!-- Mobile-only home content -->
+
+					<div class="container clearfix">
+						<h2 data-caption-animate="fadeInUp">2020 Ocean Conference</h2>
+						<h3 data-caption-animate="fadeInUp" style="font-size: 2em;">Lisbon, 2-6 June 2020</h3>
+						<!--<p class="d-none d-sm-block" data-caption-animate="fadeInUp" data-caption-delay="200"></p>-->
+						<!-- default animtated intro style-->
+						<a href="#" id="report-button-video" class="button button-border button-dark button-large" data-caption-animate="fadeInUp" data-caption-delay="200">Learn More</a>
+
+					</div>
+
+					<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+
+					<!--<div class="video-overlay" style="background-color: rgba(0,0,0,0.4);"></div>-->
+					<div class="overlay-wrap dark"></div>
+				</div>
+
+				<section id="content">
+
+					<div class="content-wrap intro-section">
+
+						<div class="container clearfix bottommargin">
+							<div class="row clearfix">
+								<div class="col-xl-6">
+									<div class="heading-block">
+										<!-- removed .topmargin default class for short heading -->
+										<h1>About</h1>
+									</div>
 								</div>
 							</div>
-							<div class="video-wrap">
-								<video id="slide-video" poster="images/fish2020.jpg" preload="auto" loop autoplay muted>
-									<div class="accessible-image"><img src="images/fish2020.jpg" class="sr-only" alt="Fish in a reef" />
+							<div class="row clearfix">
+								<p id="low-ie-warning" style="color:white; background-color: red; font-weight: bold; text-align: center;"></p>
+								<div class="col-lg-6">
+									<p class="lead">
+										The General Assembly through resolution 73/292 decided to convene the 2020 United Nations Conference to Support the Implementation of Sustainable Development Goal 14: Conserve and sustainably use the oceans, seas and marine resources for
+										sustainable development.  The overarching theme of the Conference is "Scaling up ocean action based on science and innovation for the implementation of Goal 14: stocktaking, partnerships and solutions".
+									</p>
+
+									<!-- <p><a href="#">Read more</a></p> -->
+
+									<div class="toggle">
+										<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Read more/less</div>
+										<div class="togglec">
+											<p>Resolution <a href="https://undocs.org/A/res/73/292">73/292</a> establish that the Conference shall:</p>
+											<p>                (a)          Build on existing successful partnerships and stimulate innovative and concrete new partnerships to advance the implementation of Goal 14;</p>
+											<p>                (b)          Support further action to conserve and sustainably use the oceans, seas and marine resources for sustainable development, giving due consideration to the call made in the declaration entitled “Our ocean,
+												our future: call for action”;</p>
+											<p>                (c)           Identify further ways and means to support the implementation of Goal 14;</p>
+											<p>                (d)          Involve all relevant stakeholders, bringing together Governments, the United Nations system, intergovernmental organizations, international financial institutions, other interested international bodies,
+												non-governmental organizations, civil society organizations, academic institutions, the scientific community, the private sector, philanthropic organizations and other actors to assess challenges and opportunities relating to, as
+												well as actions taken towards, the implementation of Goal 14;</p>
+											<p>                (e)          Share the experiences gained at the national, regional and international levels in the implementation of Goal 14;</p>
+											<p>                (f)           Identify possible challenges and obstacles relating to the achievement of all the targets under Goal 14, as well as opportunities and innovative ways and means to support their implementation;</p>
+											<p>                (g)          Invite Member States and other relevant stakeholders to provide an update on the implementation of the voluntary commitments made in the context of the United Nations Conference to Support the
+												Implementation of Sustainable Development Goal 14: Conserve and sustainably use the oceans, seas and marine resources for sustainable development, and invite new voluntary commitments in support of Goal 14, as well as support the
+												sharing of experiences and lessons learned on their implementation;</p>
+											<p>                (h)          Share ongoing efforts, successes and challenges between relevant ocean-related initiatives and processes with a view to promoting collaboration, cooperation and coordination, as well as preventing the
+												unnecessary duplication of efforts, to ensure further efficiency and effectiveness in support of Goal 14;</p>
+											<p>                (i)            Contribute to the follow-up and review process of the 2030 Agenda for Sustainable Development  by providing an input to the high-level political forum on sustainable development, in accordance with
+												resolutions <a href="https://undocs.org/A/res/67/290">67/290</a> of 9 July 2013, <a href="https://undocs.org/A/RES/70/1">70/1</a>, and <a href="https://undocs.org/A/RES/70/299">70/299</a> of 29 July 2016, unless otherwise agreed in
+												line with the aforementioned resolutions, on the implementation of Goal 14, including on opportunities to strengthen progress in the future.</p>
+
+											<p>The Governments of Kenya and Portugal will co-host and assume all costs of the Conference to be held  in Lisbon, Portugal, from 2 – 6 June 2020.</p>
+
+											<p><strong><em>The Conference webpage will be updated on an ongoing basis, as information becomes available. </em></strong></p>
+
+										</div>
 									</div>
-									<!--<source src='images/videos/new-technology_logo-blue.webm' type='video/webm' />
-									<source src='images/videos/new-technology_logo-blue.mp4' type='video/mp4' />-->
-								</video>
-								<div class="video-overlay" style="background-color: rgba(0,0,0,0.4);"></div>
+
+
+								</div>
+
+								<div class="col-lg-6">
+									<div style="position: relative;" class="ohidden intro-logo" data-height-xl="494" data-height-lg="567" data-height-md="567" data-height-xs="290">
+										<a href="#"> <img src="images/sidefish.jpg" style="position: absolute; left: 0;" data-animate="fadeInUp" data-delay="100" alt="Ocean Conference logo" data-toggle="tooltip" data-placement="right" title="Learn more about the Ocean conference"></a>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+					<div class="commitments-full" data-lightbox="gallery">
+						<div class="row clearfix" style="background-color: #f5f5f5;">
+							<!-- start Commitment 1 -->
+
+							<div class="col-lg-6 col-padding">
+								<h3 class="heading-block" id="documents">Documents</h3>
+								<ul>
+									<li>
+										<a target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=E">A/RES/73/292 - 2020 United Nations Conference to Support Implementation of Sustainable Development Goal 14: Conserve and sustainably use the
+											oceans, seas and marine resources for sustainable development. </a> <br>
+
+										<a class="frontLink" target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=A">[Arabic]</a> <a class="frontLink" target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=C">[Chinese]</a>
+										<a class="frontLink" target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=E">[English]</a> <a class="frontLink" target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=F">[French]</a>
+										<a class="frontLink" target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=R">[Russian]</a> <a class="frontLink" target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=S">[Spanish]</a>
+
+
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-lg-6 col-padding">
+
+								<h3 class="heading-block">Latest News</h3>
+								<div class="spost clearfix">
+									<div class="entry-image">
+										<a href="https://www.un.org/development/desa/statements/usg-liu.html"><img src="https://www.un.org/development/desa/statements/wp-content/uploads/sites/12/2017/08/liu-portrait.jpg" alt="Mr. Liu Zhenmin" width="48"></a>
+									</div>
+									<div class="entry-c">
+										<div class="entry-title">
+											<h4><a href="https://www.un.org/development/desa/statements/usg-liu.html">United Nations Secretary General António Guterres has appointed Mr. Liu Zhenmin, Under Secretary-General for Economic and Social Affairs, as Secretary-General of
+													the 2020 Ocean Conference.</a></h4>
+										</div>
+										<ul class="entry-meta">
+											<li><i class="icon-calendar3"></i> June 2019</li>
+										</ul>
+									</div>
+								</div>
+								<div class="spost clearfix">
+									<div class="entry-image">
+										<a href="http://legal.un.org/ola/div_ousg.aspx"><i class="icon-news"></i></a>
+									</div>
+									<div class="entry-c">
+										<div class="entry-title">
+											<h4><a href="http://legal.un.org/ola/div_ousg.aspx">
+													United Nations Secretary General António Guterres has appointed Mr. Miguel de Serpa Soares, Under-Secretary-General for Legal Affairs and United Nations Legal Counsel, as Special Adviser to the Presidents of the Conference on
+													oceans and legal matters. </a></h4>
+										</div>
+										<ul class="entry-meta">
+											<li><i class="icon-calendar3"></i> June 2019</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+
+						</div><!-- end Commitment 1 -->
+				</section><!-- #content end -->
+			</div>
+			<div class="tab-pane fade" id="about" aria-labelledby="about-tab" role="tabpanel" aria-labelledby="about-tab" aria-selected="false">
+				<section>
+
+					<div class="content-wrap intro-section">
+
+						<div class="container clearfix bottommargin">
+							<div class="row clearfix">
+								<div class="col-xl-6">
+									<div class="heading-block">
+										<!-- removed .topmargin default class for short heading -->
+										<h1>About</h1>
+									</div>
+								</div>
+							</div>
+							<div class="row clearfix">
+								<p id="low-ie-warning" style="color:white; background-color: red; font-weight: bold; text-align: center;"></p>
+								<div class="col">
+									<p class="lead">
+										The General Assembly through resolution 73/292 decided to convene the 2020 United Nations Conference to Support the Implementation of Sustainable Development Goal 14: Conserve and sustainably use the oceans, seas and marine resources for
+										sustainable development.  The overarching theme of the Conference is "Scaling up ocean action based on science and innovation for the implementation of Goal 14: stocktaking, partnerships and solutions".
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="slider-arrow-left" tabindex="0" role="button" aria-label="Previous slide" style="opacity: 1.19744;"><i class="icon-angle-left"></i></div>
-					<div class="slider-arrow-right" tabindex="0" role="button" aria-label="Next slide" style="opacity: 1.19744;"><i class="icon-angle-right"></i></div>
-				</div>
-
-				<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
-
+				</section>
 			</div>
-		</section><!-- /Background video home content -->
-
-		<div class="section parallax dark nobottommargin notopmargin full-screen clearfix mobile-home" style="background-image: url('images/fish2020.jpg'); center center; background-size:cover; padding: 100px 0; z-index: 0;" data-stellar-background-ratio="0.3">
-			<!-- Mobile-only home content -->
-
-			<div class="container clearfix">
-				<h2 data-caption-animate="fadeInUp">2020 Ocean Conference</h2>
-				<h3 data-caption-animate="fadeInUp" style="font-size: 2em;">Lisbon, 2-6 June 2020</h3>
-				<!--<p class="d-none d-sm-block" data-caption-animate="fadeInUp" data-caption-delay="200"></p>-->
-				<!-- default animtated intro style-->
-				<a href="#" id="report-button-video" class="button button-border button-dark button-large" data-caption-animate="fadeInUp" data-caption-delay="200">Learn More</a>
-
-			</div>
-
-			<a href="#" data-scrollto="#content" data-offset="100" class="dark one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
-
-			<!--<div class="video-overlay" style="background-color: rgba(0,0,0,0.4);"></div>-->
-			<div class="overlay-wrap dark"></div>
 		</div>
-
-		<section id="content">
-
-			<div class="content-wrap intro-section">
-
-				<div class="container clearfix bottommargin">
-					<div class="row clearfix">
-						<div class="col-xl-6">
-							<div class="heading-block">
-								<!-- removed .topmargin default class for short heading -->
-								<h1>About</h1>
-							</div>
-						</div>
-					</div>
-					<div class="row clearfix">
-						<p id="low-ie-warning" style="color:white; background-color: red; font-weight: bold; text-align: center;"></p>
-						<div class="col-lg-6">
-							<p class="lead">
-								The General Assembly through resolution 73/292 decided to convene the 2020 United Nations Conference to Support the Implementation of Sustainable Development Goal 14: Conserve and sustainably use the oceans, seas and marine resources for
-								sustainable development.  The overarching theme of the Conference is "Scaling up ocean action based on science and innovation for the implementation of Goal 14: stocktaking, partnerships and solutions".
-							</p>
-
-							<!-- <p><a href="#">Read more</a></p> -->
-
-							<div class="toggle">
-								<div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Read more/less</div>
-								<div class="togglec">
-									<p>Resolution <a href="https://undocs.org/A/res/73/292">73/292</a> establish that the Conference shall:</p>
-									<p>                (a)          Build on existing successful partnerships and stimulate innovative and concrete new partnerships to advance the implementation of Goal 14;</p>
-									<p>                (b)          Support further action to conserve and sustainably use the oceans, seas and marine resources for sustainable development, giving due consideration to the call made in the declaration entitled “Our ocean,
-										our future: call for action”;</p>
-									<p>                (c)           Identify further ways and means to support the implementation of Goal 14;</p>
-									<p>                (d)          Involve all relevant stakeholders, bringing together Governments, the United Nations system, intergovernmental organizations, international financial institutions, other interested international bodies,
-										non-governmental organizations, civil society organizations, academic institutions, the scientific community, the private sector, philanthropic organizations and other actors to assess challenges and opportunities relating to, as
-										well as actions taken towards, the implementation of Goal 14;</p>
-									<p>                (e)          Share the experiences gained at the national, regional and international levels in the implementation of Goal 14;</p>
-									<p>                (f)           Identify possible challenges and obstacles relating to the achievement of all the targets under Goal 14, as well as opportunities and innovative ways and means to support their implementation;</p>
-									<p>                (g)          Invite Member States and other relevant stakeholders to provide an update on the implementation of the voluntary commitments made in the context of the United Nations Conference to Support the
-										Implementation of Sustainable Development Goal 14: Conserve and sustainably use the oceans, seas and marine resources for sustainable development, and invite new voluntary commitments in support of Goal 14, as well as support the
-										sharing of experiences and lessons learned on their implementation;</p>
-									<p>                (h)          Share ongoing efforts, successes and challenges between relevant ocean-related initiatives and processes with a view to promoting collaboration, cooperation and coordination, as well as preventing the
-										unnecessary duplication of efforts, to ensure further efficiency and effectiveness in support of Goal 14;</p>
-									<p>                (i)            Contribute to the follow-up and review process of the 2030 Agenda for Sustainable Development  by providing an input to the high-level political forum on sustainable development, in accordance with
-										resolutions <a href="https://undocs.org/A/res/67/290">67/290</a> of 9 July 2013, <a href="https://undocs.org/A/RES/70/1">70/1</a>, and <a href="https://undocs.org/A/RES/70/299">70/299</a> of 29 July 2016, unless otherwise agreed in
-										line with the aforementioned resolutions, on the implementation of Goal 14, including on opportunities to strengthen progress in the future.</p>
-
-									<p>The Governments of Kenya and Portugal will co-host and assume all costs of the Conference to be held  in Lisbon, Portugal, from 2 – 6 June 2020.</p>
-
-									<p><strong><em>The Conference webpage will be updated on an ongoing basis, as information becomes available. </em></strong></p>
-
-								</div>
-							</div>
-
-
-						</div>
-
-						<div class="col-lg-6">
-							<div style="position: relative;" class="ohidden intro-logo" data-height-xl="494" data-height-lg="567" data-height-md="567" data-height-xs="290">
-								<a href="#"> <img src="images/sidefish.jpg" style="position: absolute; left: 0;" data-animate="fadeInUp" data-delay="100" alt="Ocean Conference logo" data-toggle="tooltip" data-placement="right" title="Learn more about the Ocean conference"></a>
-							</div>
-						</div>
-
-					</div>
-
-
-				</div>
-			</div>
-			<div class="commitments-full" data-lightbox="gallery">
-				<div class="row clearfix" style="background-color: #f5f5f5;">
-					<!-- start Commitment 1 -->
-
-					<div class="col-lg-6 col-padding">
-						<h3 class="heading-block" id="documents">Documents</h3>
-						<ul>
-							<li>
-								<a target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=E">A/RES/73/292 - 2020 United Nations Conference to Support Implementation of Sustainable Development Goal 14: Conserve and sustainably use the
-									oceans, seas and marine resources for sustainable development. </a> <br>
-
-								<a class="frontLink" target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=A">[Arabic]</a> <a class="frontLink" target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=C">[Chinese]</a>
-								<a class="frontLink" target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=E">[English]</a> <a class="frontLink" target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=F">[French]</a>
-								<a class="frontLink" target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=R">[Russian]</a> <a class="frontLink" target="_blank" href="http://www.un.org/ga/search/view_doc.asp?symbol=A/RES/73/292&Lang=S">[Spanish]</a>
-
-
-							</li>
-						</ul>
-					</div>
-
-					<div class="col-lg-6 col-padding">
-
-						<h3 class="heading-block">Latest News</h3>
-						<div class="spost clearfix">
-							<div class="entry-image">
-								<a href="https://www.un.org/development/desa/statements/usg-liu.html"><img src="https://www.un.org/development/desa/statements/wp-content/uploads/sites/12/2017/08/liu-portrait.jpg" alt="Mr. Liu Zhenmin" width="48"></a>
-							</div>
-							<div class="entry-c">
-								<div class="entry-title">
-									<h4><a href="https://www.un.org/development/desa/statements/usg-liu.html">United Nations Secretary General António Guterres has appointed Mr. Liu Zhenmin, Under Secretary-General for Economic and Social Affairs, as Secretary-General of
-											the 2020 Ocean Conference.</a></h4>
-								</div>
-								<ul class="entry-meta">
-									<li><i class="icon-calendar3"></i> June 2019</li>
-								</ul>
-							</div>
-						</div>
-						<div class="spost clearfix">
-							<div class="entry-image">
-								<a href="http://legal.un.org/ola/div_ousg.aspx"><i class="icon-news"></i></a>
-							</div>
-							<div class="entry-c">
-								<div class="entry-title">
-									<h4><a href="http://legal.un.org/ola/div_ousg.aspx">
-											United Nations Secretary General António Guterres has appointed Mr. Miguel de Serpa Soares, Under-Secretary-General for Legal Affairs and United Nations Legal Counsel, as Special Adviser to the Presidents of the Conference on
-											oceans and legal matters. </a></h4>
-								</div>
-								<ul class="entry-meta">
-									<li><i class="icon-calendar3"></i> June 2019</li>
-								</ul>
-							</div>
-						</div>
-
-					</div>
-
-				</div><!-- end Commitment 1 -->
-		</section><!-- #content end -->
 
 		<!-- Footer
 		============================================= -->
@@ -448,6 +483,16 @@
 	<script src="js/functions.js"></script>
 	<script src="js/ie.js"></script>
 
+	<!-- <script>
+		var menuItems = ['home', 'about'];
+		menuItems.forEach(function(item) {
+			$('a[href="#' + item + '"]').on('click', function(e) {
+				// e.preventDefault();
+				$('#' + item + '-tab').tab('show');
+				window.location.href = '#' + item;
+			});
+		});
+	</script> -->
 
 
 </body>
