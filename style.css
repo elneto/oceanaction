@@ -12713,6 +12713,10 @@ i.i-plain.shared-commitment {
   border-left: 2px solid #F5F5F5;
   padding-left: 1em; }
 
+.nav-tabs,
+.nav-link {
+  border: none; }
+
 /* ----------------------------------------------------------------
 	Footer
 -----------------------------------------------------------------*/
