@@ -32,6 +32,7 @@
 @import "sass/widgets.scss";
 // Extras
 @import "sass/extras.scss";
+
 // Custom CSS
 /*#page-menu nav li a {
 	//display: block;
@@ -55,19 +56,24 @@
 		border: none;
 		border-bottom: $theme-color solid 5px;
 		z-index: 299;
+
 		.home-link {
 			z-index: 300; // need to force z-index to clear stickymenu nav
 		}
+
 		.language-switcher li {
 			padding: 0 0 0 13px;
 		}
+
 		li,
 		nav li,
 		#page-menu li {
 			border: none;
+
 			&:hover {
 				background-color: transparent;
 			}
+
 			>a {
 				padding: 0;
 				margin: 0;
@@ -81,14 +87,17 @@
 				border-radius: 0;
 				text-shadow: none;
 				background: transparent;
+
 				&:last-child {
 					padding-right: 0 !important;
 				}
+
 				//.language-switcher & { }
 				&.current {
 					font-weight: 700;
 				}
 			}
+
 			i {
 				&:before {
 					color: black;
@@ -99,14 +108,18 @@
 			}
 		}
 	}
+
 	#header {
 		margin-top: 46px;
 	}
+
 	#header.sticky-header #header-wrap {
 		top: 46px;
 	}
 }
+
 @media (max-width: 1200px) {
+
 	// quick mobile styles hack
 	#top-bar {
 		position: fixed;
@@ -118,11 +131,14 @@
 		border: none;
 		border-bottom: $theme-color solid 5px;
 		z-index: 299;
+
 		.language-switcher li {
 			padding: 0 15px; // this should be on <a> but we're temporarily removing language bar links on this site
 		}
+
 		li {
 			border: none;
+
 			/*&:hover {
 					background-color: transparent;
 				}*/
@@ -136,6 +152,7 @@
 				color: black;
 				padding: 0 !important;
 			}
+
 			i {
 				&:before {
 					color: black;
@@ -146,26 +163,31 @@
 			}
 		}
 	}
+
 	#header {
 		background-color: #fff !important;
 		margin-top: 58px !important;
 		height: 45px;
 	}
+
 	#primary-menu ul li>a {
 		padding: 10px 15px;
 	}
+
 	#logo {
 		font-size: 0.9rem !important;
 		text-align: left !important;
 		line-height: inherit !important;
 		height: 45px !important;
 		padding: 0 0 10px 0;
+
 		img {
 			padding: 0 !important;
 			height: 40px !important;
 			display: inline-block !important;
 			margin-top: -16px !important;
 		}
+
 		#site-title {
 			width: 60%;
 			padding: 1px 0 0 2.5%;
@@ -173,19 +195,24 @@
 			display: inline-block;
 		}
 	}
+
 	#header-wrap {
 		//padding-top: 10% 0 15% 0;
 	}
+
 	#page-submenu-trigger {
 		color: $heading-color !important;
 	}
+
 	#page-menu,
 	#page-menu-wrap {
 		height: auto;
 		line-height: inherit;
 	}
+
 	#page-menu nav {
 		background-color: $grey-5-percent !important;
+
 		li a {
 			font-size: 12px;
 			line-height: inherit;
@@ -197,17 +224,21 @@
 			text-shadow: none;
 		}
 	}
+
 	#report-button {
 		display: none;
 	}
+
 	.intro-logo {
 		margin-left: 0;
+
 		//text-align: center;
 		img {
 			//width: 80%;
 			max-width: 95% !important;
 		}
 	}
+
 	#commitments-overview {
 		.peacekeepers-img {
 			img {
@@ -216,43 +247,52 @@
 			}
 		}
 	}
+
 	.commitments-full {
 		.col-padding {
 			padding-left: 60px !important;
 			padding-right: 60px !important;
 		}
+
 		.bg-image {
 			//background-size: auto !important;
 			height: 400px !important;
 		}
 	}
 }
+
 #page-menu.sticky-page-menu #page-menu-wrap,
 #page-menu-wrap {
 	background-color: transparent;
 	box-shadow: none;
 }
+
 .heading-block:after {
 	border-top-color: rgba($theme-color, 1);
 	width: 33%;
 	border-top-width: 3px;
 }
+
 .heading-block.quote:after {
 	border-top-color: rgba($theme-color, 1);
 	width: 33%;
 	border-top-width: 3px;
 }
+
 #commitments-full .heading-block:after {
 	width: 20%;
 }
+
 .dark .heading-block:after {
 	border-top: rgba($theme-color, 1) solid 3px !important;
 	width: 33% !important;
 }
+
 .dark .heading-block.quote:after {
 	border-top: rgba($theme-color, 1) solid 3px !important;
 	width: 20% !important;
 }
+
 // Primary Menu
 #header.full-header #primary-menu>ul,
 // full-header and not-full-header styles
@@ -262,9 +302,11 @@
 	//margin-right: 15px;
 	border-right: none;
 }
+
 #header.un-not-full-header {
 	border-bottom: rgba(#eee, 0.25) solid 1px;
 }
+
 #header.full-header #logo,
 // full-header and not-full-header styles
 #header.un-not-full-header #logo {
@@ -272,15 +314,18 @@
 	margin-right: 30px;
 	border-right: none;
 }
+
 #logo {
 	font-size: $font-size-logo;
 	line-height: 100px;
+
 	a {
 		//display: inline-block;
 		color: $heading-color;
 		//&.standard-logo { display: block; }
 		//&.retina-logo { display: none; }
 	}
+
 	img {
 		display: inline-block;
 		padding: 18px;
@@ -288,22 +333,27 @@
 		//padding-right: 13px;
 	}
 }
+
 // recommended code for styling logo text
 body:not(.top-search-open) #header-wrap #logo {
 	-webkit-transition: height .4s ease, margin .4s ease, opacity .2s .2s ease, line-height .4s ease;
 	-o-transition: height .4s ease, margin .4s ease, opacity .2s .2s ease, line-height .4s ease;
 	transition: height .4s ease, margin .4s ease, opacity .2s .2s ease, line-height .4s ease;
 }
+
 #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo {
 	line-height: 60px;
 	font-size: ($font-size-logo * 0.9)
 }
+
 #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
 	padding-right: 13px;
 }
+
 #content .content-wrap {
 	padding-bottom: 0;
 }
+
 #site-title {
 	//color: $heading-color;
 	font-weight: 600;
@@ -315,6 +365,7 @@ body:not(.top-search-open) #header-wrap #logo {
 	letter-spacing: $letterspacing-less-narrow;
 	//&.not-dark
 }
+
 /*.center .heading-block,
 .heading-block.center,
 .heading-block.title-center {
@@ -327,94 +378,117 @@ body:not(.top-search-open) #header-wrap #logo {
 -----------------------------------------------------------------*/
 a {
 	color: $body-color;
+
 	p & {
 		//text-decoration: underline !important;
 		border-bottom: dotted 1px $body-color;
 		padding-bottom: 1px;
 		//background-color: $grey-5-percent;
 	}
+
 	&:hover {
 		color: $body-color;
 	}
 }
+
 .heading-block span p {
 	color: #666; // darken text for accessibility
 }
+
 // Download report button
 #report-button.button {
 	margin: 0;
 	margin-top: 30px;
 }
+
 .dark .button-dark:not(.button-border),
 .dark .button:hover {
 	background-color: rgba(0, 0, 0, 0.5) !important;
 }
+
 // increase default opacity of dark button
 .dark .button-dark:hover {
 	background-color: $theme-color !important;
 }
+
 #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #report-button.button {
 	margin-top: 24px
 }
+
 #report-button-video,
 	{
 	background-color: rgba(black, 0.5);
 	color: white;
 	/*text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);*/
 	margin-top: $margin-small;
+
 	&.dark .button-dark:not(.button-border),
 	&.dark .button:hover {
 		background-color: rgba(0, 0, 0, 0.5) !important;
 	}
+
 	// increase default opacity of dark button
 	&.dark .button-dark:hover {
 		background-color: $theme-color !important;
 	}
+
 	@media (min-width: 992px) {
 		padding: 0 40px;
 	}
 }
+
 // Intro section
 .intro-logo {
 	margin-left: 10%;
 	padding-top: 10px;
 }
+
 @media (min-width: 992px) {
+
 	// hide mobile home from desktop
 	.mobile-home {
 		display: none !important;
 	}
 }
+
 @media (max-width: 991px) {
+
 	// hide desktop home from mobile
 	.video-home {
 		display: none !important;
 	}
 }
+
 .language-links .button {}
+
 .slider-caption {
 	h2 span.inline-block {
 		color: #fff;
 	}
+
 	p.small {
 		font-size: 16px;
 		margin-bottom: 3px;
 	}
 }
+
 #report-button-video .button {
 	background-color: rgba(white, 0.5);
 	color: white;
 }
+
 #commitments-full {
 	p.lead.bottommargin {
 		color: rgb(47, 101, 140); //rgb(87, 111, 158);
 	}
+
 	strong a {
 		font-size: 17px;
 		margin-left: 5px;
 		display: inline-block;
 	}
 }
+
 #shared-commitments {
 	.heading-block {
 		i.i-plain {
@@ -422,16 +496,19 @@ a {
 			margin: 4px 0px 7px 3px;
 		}
 	}
+
 	.feature-box {
 		i.i-plain {
 			margin-bottom: 0;
 			margin-left: -29px;
 		}
 	}
+
 	.double-line {
 		margin-bottom: 10px;
 	}
 }
+
 .back-to-top {
 	padding-right: 8px;
 	margin-top: 20px;
@@ -439,23 +516,29 @@ a {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font: $heading-font;
+
 	i.i-plain {
 		color: $secretary-general;
 	}
 }
+
 // Eight Areas
 .eight-areas {
 	margin-bottom: 80px !important;
+
 	.feature-box {
 		min-height: min-content !important;
 	}
 }
+
 // Feature Box
 .feature-box {
 	min-height: 25% !important; //bad idea from client
+
 	h3 {
 		margin-bottom: 0;
 	}
+
 	h4 {
 		margin: 0 0 5px;
 		font-size: 16px;
@@ -479,43 +562,54 @@ a {
 		}*/
 	}
 }
+
 #commitments-overview {
 	.feature-box {
+
 		//width: 120%;
 		p {
 			margin-top: 0;
 		}
 	}
 }
+
 i.i-plain.member-state {
 	color: $member-state;
 }
+
 i.i-plain.secretary-general {
 	color: $secretary-general;
 }
+
 i.i-plain.shared-commitment {
 	color: $shared-commitment;
 }
+
 .heading-block span.before-heading,
 .feature-block span.before-heading {
 	color: #666; // darken text for accessibility
 	letter-spacing: $letterspacing-less-wide;
 }
+
 // Data blocks
 .data-blocks .dark {
 	.counter {
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+
 		span {
 			color: #fff;
 		}
 	}
+
 	h5 {
 		color: #fff;
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 	}
 }
+
 .dark .heading-block:not(.not-dark),
 .dark .counter {}
+
 // Commitments Overview section
 // Icon styles
 .feature-box .fbox-icon i,
@@ -524,21 +618,26 @@ i.i-plain.shared-commitment {
 	border: $theme-color solid 3px;
 	line-height: 58px;
 }
+
 .feature-box .fbox-icon a,
 .feature-box .fbox-icon i,
 .feature-box .fbox-icon img {
 	color: $theme-color;
 }
+
 .feature-box p {
 	color: $grey-55-percent; // lightest grey possible for accessible contrast
 }
+
 .first-feature .fbox-icon a {
 	// hack to remove bug causing first icon to display 2x
 	display: none;
+
 	&.first {
 		display: block;
 	}
 }
+
 .commitments-full .heading-block {
 	.heading-icon {
 		//display: block;
@@ -551,32 +650,39 @@ i.i-plain.shared-commitment {
 		//top: 0;
 		//left: 0;
 	}
+
 	h3 {
 		//padding-left: 80px;
 		padding-top: 1px;
 		min-height: 76px;
 	}
 }
+
 .commitments-full p.lead {
 	// add more padding to Commitments section as text so short
 	//padding-left: 20%;
 	//padding-right: 20%;
 }
+
 .commitments-full .col-padding {
 	padding-left: 4%;
 	padding-right: 4%;
 }
+
 .commitments-full p.lead,
 .commitments-map p.lead {
 	font-size: 1.1rem; // resized from 1.15rem;
 }
+
 .commitments-full bold {
 	font-weight: 500;
 	text-tranform: uppercase;
 }
+
 .fluid-width-video-wrapper {
 	margin-top: -8em;
 }
+
 // Quote style
 /*.testimonial-full .testi-image a { // hack to remove bug causing image to display 2x
 		display: none;
@@ -588,9 +694,11 @@ i.i-plain.shared-commitment {
 .testimonial-full .testi-meta span {
 	color: white;
 }
+
 .testimonial-full .testi-meta span {
 	letter-spacing: 0.03em;
 }
+
 @media (min-width: 992px) {
 	.one-page-arrow {
 		width: 62px;
@@ -599,10 +707,11 @@ i.i-plain.shared-commitment {
 	}
 }
 
-.sidebar{
-	border-left: 1px solid #009edb;
+.sidebar {
+	border-left: 2px solid $page-title-bg;
 	padding-left: 1em;
 }
+
 /* ----------------------------------------------------------------
 	Footer
 -----------------------------------------------------------------*/
@@ -613,11 +722,13 @@ i.i-plain.shared-commitment {
 	border-top: none;
 	height: 6em;
 }
+
 #copyrights {
 	height: 21px;
 	padding: 0;
 	padding-top: 0;
 	background-color: #fff;
+
 	//font-size: $font-size-base;
 	//line-height: $line-height-content;
 	.footer-brand {
@@ -628,16 +739,19 @@ i.i-plain.shared-commitment {
 			color: $heading-color;
 			text-transform: uppercase;
 			text-decoration: none;
+
 			span.brand {
 				padding: 2.5px 0 0 5px;
 				display: inline-block;
 			}
 		}
+
 		img {
 			max-width: 13%;
 			float: left;
 		}
 	}
+
 	.copyright-links {
 		a {
 			//display: inline-block;
@@ -649,11 +763,13 @@ i.i-plain.shared-commitment {
 			color: black;
 			border-right: $grey-55-percent solid 1px;
 			border-bottom: none;
+
 			&:last-child {
 				margin-right: 0;
 				padding-right: 0;
 				border-right: none;
 			}
+
 			&:hover {
 				color: black;
 				border-bottom: none;
