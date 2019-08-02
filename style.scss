@@ -710,6 +710,10 @@ i.i-plain.shared-commitment {
 .sidebar {
 	border-left: 2px solid $page-title-bg;
 	padding-left: 1em;
+
+	li {
+		margin-bottom: 1em;
+	}
 }
 
 .nav-tabs,

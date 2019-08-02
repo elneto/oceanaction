@@ -12715,6 +12715,8 @@ i.i-plain.shared-commitment {
 .sidebar {
   border-left: 2px solid #F5F5F5;
   padding-left: 1em; }
+  .sidebar li {
+    margin-bottom: 1em; }
 
 .nav-tabs,
 .nav-link {
