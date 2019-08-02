@@ -82,6 +82,10 @@ a {
 	}
 }
 
+p a {
+	color: $theme-color;
+}
+
 img {
 	max-width: 100%;
 }

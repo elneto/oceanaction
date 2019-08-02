@@ -76,6 +76,9 @@ a {
   border-bottom: 2px dotted #009edb;
   padding-bottom: 0.1em; }
 
+p a {
+  color: #009edb; }
+
 img {
   max-width: 100%; }
 
@@ -12715,6 +12718,9 @@ i.i-plain.shared-commitment {
 
 .nav-tabs,
 .nav-link {
+  border: none; }
+
+.nav-tabs .nav-link {
   border: none; }
 
 /* ----------------------------------------------------------------
