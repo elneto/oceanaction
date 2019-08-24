@@ -12546,6 +12546,12 @@ a {
     #report-button-video {
       padding: 0 40px; } }
 
+section#page-title {
+  background-image: url("images/background-beach-daylight-1451360.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 37%;
+  background-position-x: right; }
+
 .intro-logo {
   margin-left: 10%;
   padding-top: 10px; }
