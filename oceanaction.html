@@ -653,6 +653,20 @@
 
 
 	</section><!-- #content end -->
+	<script>
+		function getTotalVCs(div) {
+			$.post("/commitments/getTotalVCs.php", {}, function (result) {
+				//$("#" + div).html(result);
+				var totalVCs = result.replace(",", "");
+				$("#" + div).attr("data-to", totalVCs);
+				$("#" + div).text(totalVCs);
+			});
+		}
+
+		$(document).ready(function () {
+			getTotalVCs("totalVCs");
+		});
+	</script>
 
 	<!-- Footer
 		============================================= -->
